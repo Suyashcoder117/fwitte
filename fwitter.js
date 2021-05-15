@@ -5,7 +5,7 @@ function addUser() {
   
     localStorage.setItem("user_name", user_name);
     
-      window.location = "index_room.html";
+      window.location = "fwitter_room.html";
   }
   
   
