@@ -25,7 +25,7 @@ function addRoom()
 
     localStorage.setItem("room_name", room_name);
     
-    window.location = "index_page.html";
+    window.location = "fwitter_page.html";
 }
 
 function getData() {  firebase.database().ref("/").on('value', function(snapshot) { document.getElementById("output").innerHTML = ""; snapshot.forEach(function(childSnapshot) { childKey  = childSnapshot.key;
@@ -44,11 +44,11 @@ function redirectToRoomName(name)
 {
   console.log(name);
   localStorage.setItem("room_name", name);
-    window.location = "index_page.html";
+    window.location = "fwitter_page.html";
 }
 
 function logout() {
 localStorage.removeItem("user_name");
 localStorage.removeItem("room_name");
-     window.location = "Index.html";
+    window.location = "fwitter.html";
 }
